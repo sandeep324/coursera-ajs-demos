@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular filters</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-app = "FilterModule">
+    <div ng-controller = "FilterCOntroller">
+        <h1>Angular JS filters</h1>
+
+        <input type="text" ng-model = "name">
+        name is upper case :: {{name|uppercase}} <br>
+        Book Price :: {{bookPrice |currency:"RS ":5}} <br>
+
+        Name filtered in controller :: {{nameInController}} <br>
+        book price filtered in controller :: {{bookPriceInController}}
+
+
+    </div>
+</body>
+</html>
